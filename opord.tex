@@ -1,0 +1,84 @@
+\documentclass[12pt,letterpaper,notitlepage]{article}
+\renewcommand{\familydefault}{\sfdefault}  % sans-serif font (close to Arial)
+
+
+\usepackage[shortlabels]{enumitem} % lettered numbering
+\usepackage{lastpage}
+
+% create shortcuts for classification, units, etc.
+\newcommand{\unclass}{(U)}
+\newcommand{\overallclass}{UNCLASSIFIED: EXERCISE EXERCISE EXERCISE}
+\newcommand{\uptwo}{360$^{th}$ CA BDE}
+\newcommand{\upone}{450$^{th}$ CA BN}
+\newcommand{\unit}{D/450 CA BN (A)}
+\newcommand{\timezone}{ROMEO (UTC-5)}
+
+% custom header
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+\lhead{}
+\chead{\overallclass{}}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage{} of \pageref{LastPage} }
+\renewcommand{\headrulewidth}{0pt}  % no horizontal line
+
+% ##### TODO ######
+% begin every para with (U) *unless* another classification is specified
+% modify enumerated numbering scheme to go 1. | a. | (1) | (a)? 
+% re-work bibliography so that it's generated at the top (references), but
+%% that the references section tracks what references are MADE in the doc
+
+\begin{document}
+
+\begin{flushright}
+COPY \rule{1cm}{0.4pt} OF \rule{1cm}{0.4pt} COPIES \linebreak
+HQ, 3/10 MTN \linebreak
+Fort Polk, LA 71459 \linebreak
+25SEP18
+\end{flushright}
+
+\textbf{FRAGO 01 to BEB OPORD 18-021 OPN KODIAK ANVIL}
+
+\textbf{\unclass{} TIME ZONE USED THROUGHOUT ORDER: \timezone}
+
+\textbf{\unclass{} REFERENCES:}
+\begin{enumerate}[(a)]
+\item 1/25 SBCT WARNO 01 to OPORD 18-019 (ARCTIC ANVIL)
+\item USARAK OPORD 17-038 (ARCTIC ANVIL 19-01)
+\item 1/25 SBCT OPORD 18-019 (ARCTIC ANVIL)
+\item FRAGO 1 to 1/25 SBCT OPORD 18-019 (ARCTIC ANVIL)
+\item FRAGO 2 to 1/25 SBCT OPORD 18-019 (ARCTIC ANVIL)
+\end{enumerate}
+
+\textbf{\unclass{} TASK ORGANIZATION:}
+\unit{} is OPCON to 3/10$^{th}$ effective 010001OCT2019
+
+\section{Situation}
+\subsection{Enemy Forces}
+\subsection{Friendly Forces}
+\subsubsection{High Headquarters Two Levels Up. \uptwo{}}
+\subsubsection{High Headquarters One Level Up. \upone{}}
+
+\section{Mission}
+\unit{} is mobilized and prepared to deploy to King George District NET 01 Oct 2019
+to conduct stability operations and neutralize threats to King George civil
+administration and soveriegnty under ROA.
+
+\section{Execution}
+\subsection{Commander's Intent}
+\subsection{Endstate}
+\subsection{Tasks to Subordinate Units}
+\subsection{Coordinating Instructions}
+\subsection{Timeline}
+
+\section{Sustainment}
+
+\section{Command and Signal}
+\subsection{Command}
+\subsection{Control}
+\subsection{Signal}
+
+
+\end{document}

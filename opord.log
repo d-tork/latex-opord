@@ -1,0 +1,108 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  1 JUN 2020 15:45
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**opord.tex
+(./opord.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks15
+\labelindent=\skip49
+\enit@outerparindent=\dimen135
+\enit@toks=\toks16
+\enit@inbox=\box45
+\enit@count@id=\count175
+\enitdp@description=\count176
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip50
+\f@nch@O@elh=\skip51
+\f@nch@O@erh=\skip52
+\f@nch@O@olh=\skip53
+\f@nch@O@orh=\skip54
+\f@nch@O@elf=\skip55
+\f@nch@O@erf=\skip56
+\f@nch@O@olf=\skip57
+\f@nch@O@orf=\skip58
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count177
+\l__pdf_internal_box=\box46
+)
+(./opord.aux)
+\openout1 = `opord.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 56.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 56.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 56.
+ 
+AED: lastpage setting LastPage
+[1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+[2] (./opord.aux) ) 
+Here is how much of TeX's memory you used:
+ 889 strings out of 480608
+ 14235 string characters out of 5903631
+ 253365 words of memory out of 5000000
+ 16840 multiletter control sequences out of 15000+600000
+ 536876 words of font info for 39 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 24i,10n,45p,199b,181s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmss12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmssbx10.pfb>
+Output written on opord.pdf (2 pages, 39874 bytes).
+PDF statistics:
+ 23 PDF objects out of 1000 (max. 8388607)
+ 15 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
