@@ -11,6 +11,16 @@
 \usepackage{lastpage}
 \usepackage[USenglish]{babel}
 \usepackage[showseconds=false,useregional=text,calc]{datetime2}
+
+% DATE TIME FORMATS
+\DTMnewtimestyle
+{miltime}% label
+{% definition
+	\renewcommand{\DTMdisplaytime}[3]{%
+		##1##2hours%
+	}%
+	\renewcommand{\DTMDisplaytime}{\DTMdisplaytime}%
+}
 \DTMnewdatestyle
 {mildate}% label
 {% definitions
@@ -136,6 +146,12 @@ Fort Polk, LA 71459 \linebreak
 \PM{And this is a default PM wrapping the portion}
 
 \section{\PM Situation}
+\begin{enumerate}[(a)]
+	\item \PM At \DTMdisplay{2020}{4}{7}{-1}{13}{23}{00}{+0}{00} something
+		something you should be aware. (Would very much like to figure out
+		how to use a short date format here without setting the style for
+		the entire document).
+\end{enumerate}
 \subsection{\PM Enemy Forces}
 \subsection{\PM Friendly Forces}
 \subsubsection{\PM Higher Headquarters Two Levels Up. \uptwo{}}
