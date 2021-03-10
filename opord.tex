@@ -18,6 +18,14 @@
 		\DTMtwodigits{##3} \Milshortmonthname{##2} ##1} % <========= 1.year 2.month 3.day 4.dow
 	\renewcommand*{\DTMDisplaydate}{\DTMdisplaydate}
 }
+\DTMnewdatestyle
+{mildatetime}% label
+{% definitions
+	\renewcommand*{\DTMdisplay}[9]{%
+	% <=== 1.year 2.mon 3.day 4.dow 5.hh 6.mm 7.ss 8.TZh 9.TZm
+		\DTMtwodigits{##3}##5##6\Miltimezone{##8}\Milshortmonthname{##2}##1} 
+	\renewcommand*{\DTMDisplay}{\DTMdisplay}
+}
 \newcommand{\Milshortmonthname}[1]{%
 	\ifcase#1% 0
 	  \or JAN%
@@ -35,13 +43,48 @@
 	\fi
 }
 
+\newcommand{\addOffset}[1]{%
+	\number\numexpr#1+12\relax%
+	}
+\newcommand{\Miltimezone}[1]{%
+	\ifcase\number\addOffset{#1}%
+	      Y% UTC-12
+	  \or X% UTC-11
+	  \or W% UTC-10
+	  \or V% UTC-9
+	  \or U% UTC-8
+	  \or T% UTC-7
+	  \or S% UTC-6
+	  \or R% UTC-5
+	  \or Q% UTC-4
+	  \or P% UTC-3
+	  \or O% UTC-2
+	  \or N% UTC-1
+	  \or Z% UTC
+	  \or A% UTC+1
+	  \or B% UTC+2
+	  \or C% UTC+3
+	  \or D% UTC+4
+	  \or E% UTC+5
+	  \or F% UTC+6
+	  \or G% UTC+7
+	  \or H% UTC+8
+	  \or I% UTC+9
+	  \or K% UTC+10
+	  \or L% UTC+11
+	  \or M% UTC+12
+	\fi
+}
+
+
 % create shortcuts for classification, units, etc.
-\newcommand{\PM}[1][U]{ {(#1)} }  % call with your portion mark, else defaults to (U)
+\newcommand{\PM}[1][U]{(#1) }  % call with your portion mark, else defaults to (U)
 \newcommand{\overallclass}{UNCLASSIFIED: EXERCISE EXERCISE EXERCISE}
 \newcommand{\uptwo}{120$^{th}$ CA BDE}
 \newcommand{\upone}{560$^{th}$ CA BN}
 \newcommand{\unit}{A/560 CA BN (A)}
-\newcommand{\timezone}{ROMEO (UTC-5)}
+\newcommand{\tzoffset}{-5}
+\newcommand{\tzname}{ROMEO (UTC\tzoffset)}
 
 % custom header
 \usepackage{fancyhdr}
@@ -60,7 +103,7 @@
 %% that the references section tracks what references are MADE in the doc
 
 \begin{document}
-\DTMsetdatestyle{mildate}
+\DTMsetdatestyle{mildatetime}
 
 \begin{flushright}
 COPY \rule{1cm}{0.4pt} OF \rule{1cm}{0.4pt} COPIES \linebreak
@@ -70,7 +113,7 @@ Fort Polk, LA 71459 \linebreak
 \today
 \end{flushright}
 
-\textbf{\PM TIME ZONE USED THROUGHOUT ORDER: \timezone}
+\textbf{\PM TIME ZONE USED THROUGHOUT ORDER: \tzname}
 
 \textbf{\PM REFERENCES:}
 \begin{enumerate}[(a)]
@@ -83,7 +126,14 @@ Fort Polk, LA 71459 \linebreak
 
 \textbf{\PM TASK ORGANIZATION:}
 
-\PM \unit{} is OPCON to 3/10$^{th}$ effective 010001OCT2019
+\PM \unit{} is OPCON to 3/10$^{th}$ effective 
+\DTMdisplay{2019}{10}{01}{-1}{00}{01}{00}{\tzoffset}{00}
+
+\PM And the timezone \tzname is \Miltimezone{\tzoffset}
+
+\PM[U//FOUO] And this is a non-default PM with brackets
+
+\PM{And this is a default PM wrapping the portion}
 
 \section{\PM Situation}
 \subsection{\PM Enemy Forces}
@@ -96,9 +146,10 @@ Fort Polk, LA 71459 \linebreak
 is mobilized and prepared to deploy 
 to King George County
 %NET \DTMdisplaydate{2019}{10}{15}{-1}
-NET \DTMdisplay{2019}{10}{15}{-1}{00}{01}{00}{-5}{00}
+NET \DTMdisplay{2019}{10}{15}{-1}{00}{01}{00}{+0}{00}
 IOT conduct stability operations and neutralize threats to King George civil
-	administration and soveriegnty under ROA.
+	administration and soveriegnty under ROA. (Yes you \emph{will} move at 
+	Zulu time)
 
 \section{\PM Execution}
 \subsection{\PM Commander's Intent}
